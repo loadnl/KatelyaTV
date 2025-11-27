@@ -2249,7 +2249,7 @@ function SS2QX(subs, Pudp, Ptfo) {
 
       // path=
       if (plugin.includes("path=")) {
-        obfspath = ", obfs-uri=" + plugin.split("path=")[1].split(/[;#]/)[0]
+        obfspath = ", obfs-uri=" + plugin.split("path=")[1].split(/[;#]/)[0] + "socks://"
       }
     }
     // ------ 增强解析插件参数 End ------
